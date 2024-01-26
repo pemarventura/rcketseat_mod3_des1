@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentoria</title>
+</head>
+<body>
+  <header class="headerLayout">
+    <h1 class="font-staat font-head1">MENTORIA</h1>
+    <p class="font-parag1">Preencha o formulário abaixo para agendar a sua mentoria</p>
+  </header>
+
+  <div class="formLayout">
+    <form>
+    
+      <fieldset>
+        <legend>INFORMAÇÕES PESSOAIS</legend>
+        <div class="double-input-wrap">
+          <div>
+            <label for="first-name" class="font-poppins">Nome</label>
+            <input class="default-input"
+            type="text" 
+            id="first-name"
+            required>
+          </div>
+          <div>
+            <label for="last-name" class="font-poppins">Sobrenome</label>
+            <input
+            class="default-input" 
+            type="text" 
+            id="last-name"
+            required>
+          </div>
+        </div>
+        <div class="margin-label">
+          <label for="senha-form"class="font-poppins">Senha  <span class="shade-span"> (digite um email válido)</span></label>
+          </div>
+          <input class="default-input"
+          type="password"
+          id="senha-form">
+      </fieldset>
+      
+      <fieldset>
+        <legend class="legend-info">INFORMAÇÕES DO MENTOR</legend>
+        <div>
+          <label for="nome-mentor" class="font-poppins margin-label">Nome do seu mentor  <span class="shade-span"> (so o primeiro nome)</span></label>
+          <input class="default-input" 
+          required
+          type="text"
+          id="nome-mentor">
+        </div>
+      </fieldset>
+  
+      <fieldset>
+        <legend class="ultima-legend">SEUS HORÁRIOS DISPONÍVEIS</legend>
+        <legend class="legend-diferente">PRIMEIRA MENTORIA</legend>
+        <div class="triple-input-wrap">
+          <div class="trpl-div">
+            <label for="primeira-date" class="font-poppins">Data <span class="shade-span">(DD/MM/AAAAA)</span></label>
+            <input class="default-input"
+            type="text" 
+            id="primeira-date"
+            required
+            readonly
+            pattern="\d{2}/\d{2}/\d{4}">
+          </div>
+          <div>
+            <label for="horaDa-1" class="font-poppins">Das</label>
+            <input
+            class="default-input" 
+            type="text" 
+            id="horaDa-1"
+            pattern="([01]?[0-9]|2[0-3]):[0-5][0-9]"
+            required>
+          </div>
+          <div>
+            <label for="horaAte-1" class="font-poppins">Ate</label>
+            <input
+            class="default-input" 
+            type="text" 
+            id="horaAte-1"
+            pattern="([01]?[0-9]|2[0-3]):[0-5][0-9]"
+            required>
+          </div>
+        </div>
+        <legend class="legend-diferente">SEGUNDA MENTORIA</legend>
+        <div class="triple-input-wrap">
+          <div class="trpl-div">
+            <label for="segunda-date" class="font-poppins">Data <span class="shade-span">(DD/MM/AAAAA)</span></label>
+            <input class="default-input"
+            type="text" 
+            id="segunda-date"
+            required
+            readonly
+            pattern="\d{2}/\d{2}/\d{4}">
+          </div>
+          <div>
+            <label for="horaAte-2" class="font-poppins">Das</label>
+            <input
+            class="default-input" 
+            type="text" 
+            id="horaDa-2"
+            pattern="([01]?[0-9]|2[0-3]):[0-5][0-9]"
+            required>
+          </div>
+          <div>
+            <label for="horaAte-2" class="font-poppins">Ate</label>
+            <input
+            class="default-input" 
+            type="text" 
+            id="horaAte-2"
+            pattern="([01]?[0-9]|2[0-3]):[0-5][0-9]"
+            required>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+    <footer>
+      <div class="button-div">
+        <button>
+          <span class="pra-acabar font-staat">SALVAR</span>
+        </button>
+      </div>
+    </footer>
+  </div>
+  
+</body>
+</html>
